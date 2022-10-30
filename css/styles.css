@@ -319,19 +319,8 @@ img {
   padding-bottom: 94px;
 }
 
-.work-list-item {
+.work-list__item {
   position: relative;
-}
-
-.image-text {
-  margin: 0;
-  text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--hero-text-color);
 }
 
 .work-image {
@@ -343,6 +332,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.work-image__text {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-text-color);
 }
 
 /* Team */
@@ -361,11 +361,19 @@ img {
   gap: 30px;
 }
 
+.team-list__item {
+  background-color: var(--body-bgr-color);
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-container {
   padding: 30px 32px;
 }
 
-.team-title {
+.team-container__title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -373,16 +381,7 @@ img {
   text-align: center;
 }
 
-.description-bgr {
-  background-color: var(--body-bgr-color);
-  width: 270px;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.job-title {
+.team-container__job-title {
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -973,7 +972,7 @@ textarea::placeholder {
   padding: 0;
 }
 
-.social-link {
+.list-socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -986,8 +985,8 @@ textarea::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.list-socials__link:hover,
+.list-socials__link:focus {
   fill: var(--body-bgr-color);
   background-color: var(--accent-color);
 }
@@ -1001,7 +1000,7 @@ textarea::placeholder {
   margin: 0;
 }
 
-.clients-link {
+.clients-list__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-icons-fill);
@@ -1015,10 +1014,8 @@ textarea::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-
-/* Icons Footer */
