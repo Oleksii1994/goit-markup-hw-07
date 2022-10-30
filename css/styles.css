@@ -37,6 +37,16 @@ img {
   height: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 .title-centered {
   text-align: center;
 }
@@ -246,18 +256,9 @@ img {
   padding: 0;
 }
 
-/* Section */
+/* Features */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-work {
-  padding-bottom: 94px;
-}
-
-.section-title {
+.features-container__title {
   color: var(--title-text-color);
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -267,7 +268,7 @@ img {
   margin-bottom: 50px;
 }
 
-.visually-hidden {
+.features-container__title--visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -288,31 +289,35 @@ img {
   margin: 0;
 }
 
-.features-item {
+.features__item {
   width: 270px;
 }
 
-.features-text {
+.features__text {
   color: var(--text-color);
   margin: 0;
   font-size: 14px;
   line-height: calc(24 / 14);
 }
 
-.features .features-title {
+.features__title {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.features-title,
+.features__title,
 .team-title {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
 /* Work */
+
+.work {
+  padding-bottom: 94px;
+}
 
 .work-list-item {
   position: relative;
@@ -949,7 +954,7 @@ textarea::placeholder {
 
 /* Icons Feature */
 
-.icon-feature {
+.features-icon {
   width: 270px;
   height: 120px;
   display: flex;
