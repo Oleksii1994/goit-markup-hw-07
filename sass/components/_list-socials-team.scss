@@ -1,0 +1,24 @@
+.list-socials {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.list-socials__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--social-icons-fill);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-socials__link:hover,
+.list-socials__link:focus {
+  fill: var(--body-bgr-color);
+  background-color: var(--accent-color);
+}
