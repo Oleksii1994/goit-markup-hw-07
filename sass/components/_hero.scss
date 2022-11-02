@@ -8,12 +8,12 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     url(../img/bgr.jpg);
-  background-color: var(--background-color);
+  background-color: $background-color;
   background-position: center;
 }
 
 .hero__title {
-  color: var(--hero-text-color);
+  color: $hero-text-color;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);

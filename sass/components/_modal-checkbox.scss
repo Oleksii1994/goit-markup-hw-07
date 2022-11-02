@@ -27,12 +27,12 @@
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  background: var(--accent-color);
-  fill: var(--body-bgr-color);
+  background: $accent-color;
+  fill: $body-bgr-color;
   border-radius: 2px;
   transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
 }
 
 .checkbox-container__input:checked~.checkbox-container__icon {
@@ -53,11 +53,11 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .checkbox-container__link {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .btn-modal-container {

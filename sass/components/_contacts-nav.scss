@@ -9,19 +9,19 @@
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
-  color: var(--text-color);
+  color: $text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-dur;
+  transition-timing-function: c$cubic-bezier;
 }
 
 .contacts-nav__link:hover,
 .contacts-nav__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .contacts-nav__item {

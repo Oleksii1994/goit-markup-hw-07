@@ -1,6 +1,6 @@
 .work-card {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid $work-card-border;
   border-top: none;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .work-card__item {
-  color: var(--text-color);
+  color: $text-color;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;

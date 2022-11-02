@@ -11,14 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--social-icons-fill);
+  fill: $social-icons-fill;
   transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
 }
 
 .list-socials__link:hover,
 .list-socials__link:focus {
-  fill: var(--body-bgr-color);
-  background-color: var(--accent-color);
+  fill: $body-bgr-color;
+  background-color: $accent-color;
 }

@@ -10,7 +10,7 @@
 .works-list__element {
   width: 370px;
   box-sizing: border-box;
-  background: var(--body-bgr-color);
+  background: $body-bgr-color;
 }
 
 .works-list__element:nth-child(n + 7) {
@@ -22,8 +22,8 @@
   text-decoration: none;
   color: inherit;
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
 }
 
 .works-list__link:hover,

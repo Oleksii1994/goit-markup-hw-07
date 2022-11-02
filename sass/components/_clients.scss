@@ -8,19 +8,19 @@
 .clients-list__link {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--social-icons-fill);
+  border: 1px solid $social-icons-fill;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--social-icons-fill);
+  fill: $social-icons-fill;
   transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:$transition-dur;
+  transition-timing-function: $cubic-bezier;
 }
 
 .clients-list__link:hover,
 .clients-list__link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: $accent-color;
+  border-color: $accent-color;
 }

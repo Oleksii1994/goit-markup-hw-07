@@ -8,7 +8,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--hero-text-color);
+  color: $hero-text-color;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -28,14 +28,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--body-bgr-color);
+  fill: $body-bgr-color;
   background: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
 }
 
 .icons-ftr__link:hover,
 .icons-ftr__link:focus {
-  background: var(--accent-color);
+  background: $accent-color;
 }

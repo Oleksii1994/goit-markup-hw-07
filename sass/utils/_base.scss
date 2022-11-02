@@ -1,6 +1,6 @@
 body {
-  background-color: var(--body-bgr-color);
-  color: var(--primary-text-color);
+  background-color: $body-bgr-color;
+  color: $primary-text-color;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -34,7 +34,7 @@ img {
 }
 
 .logo {
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -44,7 +44,7 @@ img {
 }
 
 .logo-part {
-  color: var(--second-part-logo);
+  color: $second-part-logo;
 }
 
 .list {
@@ -58,8 +58,8 @@ img {
 }
 
 .button {
-  color: var(--hero-text-color);
-  background-color: var(--accent-color);
+  color: $hero-text-color;
+  background-color: $accent-color;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
@@ -73,12 +73,12 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
 }
 
 .button:hover,
 .button:focus {
   cursor: pointer;
-  background-color: var(--hover-focus-btn);
+  background-color: $hover-focus-btn;
 }
