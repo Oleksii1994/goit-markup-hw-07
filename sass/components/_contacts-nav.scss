@@ -17,21 +17,25 @@
   transition-property: color;
   transition-duration: $transition-dur;
   transition-timing-function: c$cubic-bezier;
+
+&:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.contacts-nav__link:hover,
-.contacts-nav__link:focus {
-  color: $accent-color;
-}
+
 
 .contacts-nav__item {
   margin-left: auto;
   margin-right: 50px;
+
+&:last-child {
+    margin-right: 0;
+  }
 }
 
-.contacts-nav__item:last-child {
-  margin-right: 0;
-}
+
 
 .contacts-nav__icon {
   margin-right: 10px;

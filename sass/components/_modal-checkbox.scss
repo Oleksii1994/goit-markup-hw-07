@@ -33,12 +33,14 @@
   transition-property: opacity, visibility;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
-}
 
-.checkbox-container__input:checked~.checkbox-container__icon {
-  visibility: visible;
+.checkbox-container__input:checked ~ & {
+visibility: visible;
   opacity: 1;
 }
+}
+
+
 
 .checkbox-container__icon-empty {
   position: absolute;

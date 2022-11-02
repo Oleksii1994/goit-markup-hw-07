@@ -30,6 +30,10 @@
   transition-property: fill;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
+
+.input-thumb__field:focus + & {
+    fill: $accent-color;
+  }
 }
 
 .input-thumb__field {
@@ -43,14 +47,10 @@
   transition-property: border-color;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
-}
 
-.input-thumb__field:focus {
-  border-color: $accent-color;
-}
-
-.input-thumb__field:focus+.input-thumb__modal-icon {
-  fill: $accent-color;
+&:focus {
+    border-color: $accent-color;
+  }
 }
 
 .comment-field {
@@ -63,13 +63,12 @@
   transition-property: border-color;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
-}
 
-.comment-field:focus {
-  border-color: $accent-color;
-}
+&:focus {
+    border-color: $accent-color;
+  }
 
-.comment-field::placeholder {
+&::placeholder {
   position: absolute;
   top: 12px;
   left: 16px;
@@ -80,3 +79,7 @@
   text-align: 0;
   color: rgba(117, 117, 117, 0.5);
 }
+}
+
+
+

@@ -15,10 +15,11 @@
   transition-property: fill, background-color;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    fill: $body-bgr-color;
+    background-color: $accent-color;
+  }
 }
 
-.list-socials__link:hover,
-.list-socials__link:focus {
-  fill: $body-bgr-color;
-  background-color: $accent-color;
-}

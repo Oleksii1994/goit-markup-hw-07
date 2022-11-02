@@ -28,12 +28,14 @@
   transition-property: fill;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
-.modal__close-button:hover,
-.modal__close-button:focus {
-  fill: $accent-color;
-}
+
 
 .modal__title {
   margin: 0;

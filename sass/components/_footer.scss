@@ -35,11 +35,13 @@
 
 .address-list__item {
   margin-bottom: 9px;
+
+&:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.address-list__item:last-child {
-  margin-bottom: 0;
-}
+
 
 .address-list__link {
   height: 21px;
@@ -60,9 +62,10 @@
   transition-property: color;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.address-list__contacts:hover,
-.address-list__contacts:focus {
-  color: $accent-color;
-}

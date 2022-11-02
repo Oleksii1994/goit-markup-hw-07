@@ -33,9 +33,10 @@
   transition-property: background-color;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    background: $accent-color;
+  }
 }
 
-.icons-ftr__link:hover,
-.icons-ftr__link:focus {
-  background: $accent-color;
-}

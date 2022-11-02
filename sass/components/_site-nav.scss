@@ -41,20 +41,24 @@
   transition-property: color;
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .site-nav__item {
   margin-right: 50px;
+
+&:last-child {
+    margin-right: 0;
+  }
 }
 
-.site-nav__item:last-child {
-  margin-right: 0;
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: $accent-color;
-}
+
+
 
 .site-nav__link--current {
   position: relative;
